@@ -212,7 +212,7 @@
     top: 30%;
 }
 .introText1{
-    width: 2000px;
+    width: 3000px;
     height: 200px;
     font-size: 20pt;
     font-family: 'Raleway', sans-serif;
@@ -223,7 +223,22 @@
     position: absolute;
     right: 0%;
     top: 48%;
+
+    animation-name: intro;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes intro{
+    from{
+        left: 0%;
+    }
+    to{
+        left: 30%;
+    }
+}
+
 
 /* .introText1 span {
     font-weight: 500;
@@ -368,8 +383,8 @@
 /* essencial part */
 .essBox{
     width: 120%;
-    height: 1200px;
-    background-color: turquoise;
+    height: 1500px;
+    background-color: lightgray;
     display: grid;
     position: absolute;
     top: 2000px;
@@ -377,14 +392,281 @@
     overflow: hidden;
 }
 
+/* character */
+.essCharact{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 1600px;
+    top: 100px;
+}
+
+.circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    padding-left: 60px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.eyes{
+    width: 45px;
+    height: 80px;
+    border-radius: 45px 45px 45px 45px;
+    background-color: white;
+
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+    animation-name: charctEye;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes charactEye{
+    from {
+        height: 10px;
+        border-radius: 45px 45px;
+        background-color: rgb(112, 35, 255);
+    }
+    to {
+        height: 50px;
+        border-radius: 45px 45px 45px 45px;
+        background-color: white;
+    }
+}
+
+
+.nose{
+    width: 50px;
+    height: 50px;
+
+    background-color: transparent;
+    stroke: white;
+    stroke-width: 3px;
+    border-top:10px solid white;
+    border-right:10px solid white;
+    border-radius: 50%;
+    transform: rotate(45deg);
+
+    position: absolute;
+    left: 120px;
+    top: 150px;
+
+    transition-duration: 1s;
+}
+
+.circle:hover{
+    width: 250px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    padding-left: 60px;
+    padding-top: 100px;
+    box-sizing: border-box;   
+}
+
+.circle:hover .eyes {
+    width: 45px;
+    height: 20px;
+    border-radius: 30%;
+    background-color: white;
+}
+
+.circle:hover .nose{
+    width: 50px;
+    height: 50px;
+
+    background-color: transparent;
+    stroke: white;
+    stroke-width: 3px;
+    border-top:10px solid white;
+    border-right:10px solid white;
+    border-radius: 50%;
+    transform: rotate(45deg);
+
+    position: absolute;
+    left: 110px;
+    top: 150px;
+}
+
+
+
+/* tool */
+
 .essProj{
     width: 1000px;
     height: 400px;
     position: relative;
     left: 500px;
-    top: 100px;
+    top: 300px;
     font-family: 'Raleway', sans-serif;
     font-weight: 100;  
     font-size: 100px;
     color: black;
+}
+
+
+.essTool{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 10px;
+    
+    /* position: absolute;
+    right: 1000px;
+    top: 100px; */
+}
+
+.tool1{
+    width: 200px;
+    height: 100px;
+    font-size: 90px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;  
+    color: black;
+
+    transition-duration: 0.5s;
+}
+.tool1:hover{
+    color: rgb(45, 119, 255);
+}
+
+.tool2{
+    width: 200px;
+    height: 100px;
+    font-size: 90px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;  
+    color: black;
+
+    transition-duration: 0.5s;
+}
+.tool2:hover{
+    color: rgb(255, 153, 36);
+}
+
+.tool3{
+    width: 200px;
+    height: 100px;
+    font-size: 90px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;  
+    color: black;
+
+    transition-duration: 0.5s;
+}
+.tool3:hover{
+    color: rgb(255, 36, 91);
+}
+
+.tool4{
+    width: 200px;
+    height: 100px;
+    font-size: 90px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;  
+    color: black;
+
+    transition-duration: 0.5s;
+}
+.tool4:hover{
+    color: rgb(117, 102, 255);
+}
+
+.tool5{
+    width: 200px;
+    height: 100px;
+    font-size: 90px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;  
+    color: black;
+
+    transition-duration: 0.5s;
+}
+.tool5:hover{
+    color: rgb(117, 102, 255);
+}
+
+.tool6{
+    width: 200px;
+    height: 100px;
+    font-size: 90px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;  
+    color: black;
+
+    transition-duration: 0.5s;
+}
+.tool6:hover{
+    color: rgb(240, 75, 255);
+}
+
+.tool7{
+    width: 200px;
+    height: 100px;
+    font-size: 90px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;  
+    color: black;
+
+    transition-duration: 0.5s;
+}
+.tool7:hover{
+    color: rgb(255, 83, 41);
+}
+
+.tool8{
+    width: 200px;
+    height: 100px;
+    font-size: 90px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;  
+    color: black;
+
+    transition-duration: 0.5s;
+}
+.tool8:hover{
+    color: rgb(112, 35, 255);
+}
+
+/* projects */
+.essPro{
+    position: absolute;
+    top: 500px;
+}
+
+.ess2021{
+    width: 1000px;
+    height: 1000px;
+    font-size: 20px;
+    font-weight: 400;  
+    color: black;
+}
+
+/* copyright */
+.copyright{
+    width: 1920px;
+    height: 100px;
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+    background-color: white;
+
+    position: absolute;
+    top: 1100px;
+    left: -250px;
 }
