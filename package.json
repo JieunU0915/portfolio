@@ -5,6 +5,7 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
+        "export": "next export -o docs/",
         "start": "next start",
         "lint": "next lint",
         "clean": "rm -rf client.webpack.lock.data & rm -rf server.webpack.lock.data & rm -rf .next  & rm -rf next.lock"
