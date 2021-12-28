@@ -5,43 +5,55 @@ import { Face } from "../components/Face"
 // import Face from "https://framer.com/m/face-vkm8.js@Z6HOOZivknS2CsTeuq85"
 
 export default function Home() {
-    return (
-        <>
-            <Head>
-                <title>JieunU Portfolio</title>
-                <meta name="description" content="Modules" />
-                <link rel="icon" href="/icon_uje.png" />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-                <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700;900&display=swap" rel="stylesheet" />
-            </Head>
-            <div className="hambugerBar"></div>
-            <div className="main">
-                <div className="mainTitle">I AM</div> 
-                <div className="mainMotion">MOTION
-                    <div className="underline1"></div></div>
-                <div className="mainEditorial">EDITORIAL
-                    <div className="underline2"></div></div>
-                <div className="mainTitle">DESIGNER</div>
-
-                <div className="scroll">
-                    <div className="SCrec">
-                        <div className="SCrecText">SCROLL</div>
-                    <div className="SCrec1 "></div>
-                    <div className="SCrec2"></div>
-                    <div className="SCrec3"></div>
-                    </div>
-                </div>
+  return (
+    <>
+      <Head>
+        <title>JieunU Portfolio</title>
+        <meta name="description" content="Modules" />
+        <link rel="icon" href="/icon_uje.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;700;900&display=swap" rel="stylesheet" />
+      </Head>
+      <div id="app">
+        <div className="hambugerBar"></div>
+        <div id="main">
+          <div className="text-container">
+            <div className="mainTitle">I AM</div> 
+            <div className="mainMotion">
+              <span>MOTION</span>
+              <div className="underline1"></div>
             </div>
+            <div className="mainEditorial">
+              <span>EDITORIAL</span>
+              <div className="underline2"></div>
+            </div>
+            <div className="mainTitle">DESIGNER</div>
+          </div>
+          <div className="scroll">
+            <div className="SCrec">
+              <div className="SCrecText">SCROLL</div>
+              <div className="SCrecArrow SCrec1"></div>
+              <div className="SCrecArrow SCrec2"></div>
+              <div className="SCrecArrow SCrec3"></div>
+            </div>
+          </div>
+        </div>
 
-            <div className="intro">
-                <div className="introBox"></div>
-                <div className="introText1">Give me CONTACT if you have any projects Give me CONTACT if you have any projects Give me CONTACT if you have any projects Give me CONTACT if you have any projects Give me CONTACT if you have any projects Give me CONTACT if you have any projectsif you have any projects Give me CONTACT if you have any projects Give me CONTACT if you have any projects Give me CONTACT if you have any projects Give me CONTACT if you have any projects</div>
-                <div className="introName">
-                    <div className="introNameFill">UJE</div>
-                    <div className="introNameStroke">Ujieun</div>
-                </div>
-                <div className="about">about</div>
+        <div className="intro">
+          <div className="intro-container">
+            <div className="about">about</div>
+            <div className="introBox">
+              <div className="introName">
+                <p className="introNameStroke">Ujieun&nbsp;
+                  <span className="introNameFill">UJE</span>
+                </p>
+              </div>
+              <div className="introText1">
+                  Give me CONTACT if you have any projects Give me CONTACT if you have any projects Give me CONTACT if you have any projects Give me CONTACT if you have any projects
+              </div>
+            </div>
+            </div>
                 <div className="introNum">010 5152 9638 <span>TEL</span>
                     <div className="introNumUnder"></div>
                 </div>
@@ -67,12 +79,11 @@ export default function Home() {
                         <div className="tool4">Pr</div>
                         <div className="tool5">Ae</div>
                         <div className="tool6">Xd</div>
-                        <div className="tool7">Protopie</div>
-                        <div className="tool1"></div>
-                        <div className="tool1"></div>
-                        <div className="tool8">Cinema4D</div>
+                        <span className="tool7">Protopie</span>
+                        <span className="tool8">Cinema4D</span>
                     </div>
-                    <div className="essPro">Jobs
+            <div className="essPro">
+              <h2>Jobs</h2>
                         <div className="ess2021">
                             <p>Samsung Art & Design Institute
                             Communication Design 2020 입학</p>
@@ -86,13 +97,11 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="copyright"><p>Copyright @UJE 2021, Samsung Art & Design Institute, All Rights Reserved. </p></div>
+                    
                 </div>
-            </div>
-
-
-
-
-        </>
-    )
+        </div>
+        <div className="copyright"><p>Copyright @UJE 2021, Samsung Art & Design Institute, All Rights Reserved. </p></div>
+        </div>
+    </>
+  )
 }
